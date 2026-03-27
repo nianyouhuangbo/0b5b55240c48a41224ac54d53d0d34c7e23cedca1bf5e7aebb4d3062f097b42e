@@ -1,23 +1,28 @@
 name: nianyouhuangbo
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '31 5/6 * * *'
-jobs:  # 31835
+    - cron: '36 5,11,17,23 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: nianyouhuangbo
         env:
-          am99: ${{ secrets.am99 }}
+          vfnbn674: ${{ secrets.vfnbn674 }}
         run: |
-          echo $am99 | jq -r .gqp387 | /bin/bash
-          echo $j27412 | jq -r .vfnzv8 | /bin/bash
-          echo $fukcl5169 | jq -r .nj9 | /bin/bash
-          echo $zmtg190 | jq -r .fhfr1 | /bin/bash
-          echo $k6864 | jq -r .hsk5 | /bin/bash
-          echo $fnw40010 | jq -r .ftx5272 | /bin/bash
-          echo $bt62 | jq -r .uor0232 | /bin/bash
+          printf '%s' "$vfnbn674" | jq -r .tkpgc8321 | /bin/bash
+          echo $akem96114 | jq -r .y77164 | /bin/bash
+          printf '%s' "$zvfhv6" | jq -r .nd9696 | /bin/bash
+          printf '%s' "$c8474" | jq -r .oyhiw9953 | /bin/bash
+          echo $tdlut82 | jq -r .dc1 | /bin/bash
+          echo $p4 | jq -r .lci32505 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: i3g1iKj2
+          path: "*.zip"
+          retention-days: 1
